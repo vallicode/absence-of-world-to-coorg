@@ -1,0 +1,1 @@
+document.querySelectorAll('.route-break').forEach((route)=>{window.addEventListener('scroll',()=>{const r=route.getBoundingClientRect(),bus=route.querySelector('.tempo');if(r.top<innerHeight&&r.bottom>0)bus.style.animationPlayState='running';else bus.style.animationPlayState='paused'});});
